@@ -6,12 +6,22 @@ using UnityEngine;
 public class Snapper : MonoBehaviour
 {
     public List<GameObject> cubetypes;
-    private int count = 0;
+    public int count = 0;
     void Update()
     {
-        if (Input.GetKeyDown("a"))
+        if (Input.GetKeyDown("1"))
         {
-            count += 1;
+            count = 0;
+        }
+        
+        if (Input.GetKeyDown("2"))
+        {
+            count = 1;
+        }
+        
+        if (Input.GetKeyDown("3"))
+        {
+            count = 2;
         }
             
             
