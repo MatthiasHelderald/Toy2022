@@ -1,12 +1,20 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class Snapper : MonoBehaviour
 {
+    public List<GameObject> cubetypes;
+    private int count = 0;
     void Update()
     {
-        
+        if (Input.GetKeyDown("a"))
+        {
+            count += 1;
+        }
+            
+            
         if (Input.GetMouseButtonDown(0))
         {
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
@@ -19,7 +27,7 @@ public class Snapper : MonoBehaviour
                 // calculate the rotation to create the object aligned with the face normal:
                 Quaternion rotation = Quaternion.FromToRotation(Vector3.up, hit.normal);
                 // create the object at the face center, and perpendicular to it:
-                GameObject Placement = GameObject.CreatePrimitive(PrimitiveType.Cube);
+                GameObject Placement = Instantiate(cubetypes[count]);
                 Placement.transform.position = position;
                 Placement.transform.rotation = rotation;
 
