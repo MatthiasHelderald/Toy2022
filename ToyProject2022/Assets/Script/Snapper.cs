@@ -6,6 +6,8 @@ using UnityEngine;
 public class Snapper : MonoBehaviour
 {
     public List<GameObject> cubetypes;
+    public List<GameObject> cubeinput;
+    
     public int count = 0;
     void Update()
     {
@@ -38,6 +40,7 @@ public class Snapper : MonoBehaviour
                 Quaternion rotation = Quaternion.FromToRotation(Vector3.up, hit.normal);
                 // create the object at the face center, and perpendicular to it:
                 GameObject Placement = Instantiate(cubetypes[count]);
+                cubeinput.Add((cubetypes[count]));
                 Placement.transform.position = position;
                 Placement.transform.rotation = rotation;
 
@@ -50,6 +53,9 @@ public class Snapper : MonoBehaviour
                 Debug.Log("nothing");
             }
         }
+        
+        Vector3 forward = transform. TransformDirection(Vector3. forward) * 30;
+        Debug. DrawRay(transform. position, forward, Color. green);
 
     }
 }
