@@ -7,8 +7,9 @@ public class Snapper : MonoBehaviour
 {
     public List<GameObject> cubetypes;
     public List<GameObject> cubeinput;
-    
+    public List<Vector3> cube_pos;
     public int count = 0;
+    
     void Update()
     {
         if (Input.GetKeyDown("1"))
@@ -41,9 +42,10 @@ public class Snapper : MonoBehaviour
                 // create the object at the face center, and perpendicular to it:
                 GameObject Placement = Instantiate(cubetypes[count]);
                 cubeinput.Add((cubetypes[count]));
+                cube_pos.Add(position);
                 Placement.transform.position = position;
                 Placement.transform.rotation = rotation;
-
+                
 
 
                 //Instantiate( PrimitiveType.Cube as GameObject , position , rotation ) as GameObject;
@@ -52,6 +54,7 @@ public class Snapper : MonoBehaviour
             {
                 Debug.Log("nothing");
             }
+            
         }
         
         Vector3 forward = transform. TransformDirection(Vector3. forward) * 30;
