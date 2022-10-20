@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 4136732839894763085}
   - component: {fileID: 4136732839894763074}
   - component: {fileID: 1845337618616228594}
+  - component: {fileID: 689673184963742035}
   m_Layer: 0
   m_Name: cube_green
   m_TagString: Untagged
@@ -108,5 +109,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 13f7b33484c3e944c81695cd545e8119, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &689673184963742035
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4136732839894763075}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e47d5c8bc57b23b4584f37692ca00d44, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

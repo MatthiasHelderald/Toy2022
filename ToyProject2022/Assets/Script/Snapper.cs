@@ -45,6 +45,7 @@ public class Snapper : MonoBehaviour
         {
             count = 2;
         }
+        
             
             
         if (Input.GetMouseButtonDown(0))

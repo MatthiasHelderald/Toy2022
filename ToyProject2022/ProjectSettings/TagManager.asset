@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - Empty
+  - Red
+  - Experiment
   layers:
   - Default
   - TransparentFX
