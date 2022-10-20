@@ -743,18 +743,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dea12821773357e41aae212b4e91097b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  viewportCreator: {fileID: 1080009352}
+  viewportCreator: {fileID: 1080009355}
   cubetypes:
   - {fileID: 4136732839894763075, guid: b34fa5329c013484b814b244930f5806, type: 3}
   - {fileID: 440950447250710933, guid: 4f2a6b950b04cf447b7c7c1616023f63, type: 3}
   - {fileID: 7580768800309198861, guid: bd188ae6588d7144db4c6593fc95c056, type: 3}
-  cubeinput:
-  - {fileID: 1080009346}
-  cube_pos:
-  - {x: 0, y: 0, z: 0}
+  cubeinput: []
+  cube_pos: []
   c_green: {fileID: 1080009346}
   count: 0
---- !u!114 &1080009352
+--- !u!114 &1080009355
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -890,7 +888,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1845337618616228594, guid: b34fa5329c013484b814b244930f5806, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: b34fa5329c013484b814b244930f5806, type: 3}
 --- !u!1 &1428390598
 GameObject:

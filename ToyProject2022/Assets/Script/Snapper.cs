@@ -80,7 +80,6 @@ public class Snapper : MonoBehaviour
             if (Physics.Raycast(c_green.transform.position, c_green.transform.TransformDirection(Vector3.forward), out hit, 1f))
             {
                 Debug.Log("cube devant!");
-                Destroy(hit.transform.gameObject);
             }
                 
             else
