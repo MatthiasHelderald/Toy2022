@@ -6,8 +6,6 @@ using Random = UnityEngine.Random;
 
 public class Snapper : MonoBehaviour
 {
-    public ViewportCreator viewportCreator;
-
     public List<GameObject> cubetypes;
     public List<GameObject> cubeinput;
     public List<Vector3> cube_pos;
@@ -67,10 +65,6 @@ public class Snapper : MonoBehaviour
                 //Placement.transform.rotation = rotation;
                 
                 //Instantiate( PrimitiveType.Cube as GameObject , position , rotation ) as GameObject;
-
-                //création du bloc dans le viewport
-                viewportCreator.ViewBloc(Placement, position);
-
             }
             else
             {
@@ -80,7 +74,6 @@ public class Snapper : MonoBehaviour
             if (Physics.Raycast(c_green.transform.position, c_green.transform.TransformDirection(Vector3.forward), out hit, 1f))
             {
                 Debug.Log("cube devant!");
-                Destroy(hit.transform.gameObject);
             }
                 
             else
@@ -120,7 +113,7 @@ public class Snapper : MonoBehaviour
         }
         
         Vector3 forward = transform. TransformDirection(Vector3. forward) * 30;
-        Debug. DrawRay(transform. position, Vector3.back, Color. green);
+        Debug. DrawRay(transform. position, forward, Color. green);
 
     }
 }
