@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class GreenBehavior : MonoBehaviour
 {
+public GameObject yellow;
+
     void Start()
     {
         if (transform.position.y == 0)
@@ -20,7 +22,9 @@ public class GreenBehavior : MonoBehaviour
             if (hit.transform.gameObject.tag == "Red")
             {
                 Debug.Log("cube devant Red");
-                Destroy(hit.transform.gameObject);
+                Instantiate(yellow,hit.transform.position + Vector3.up * 1,hit.transform.rotation);
+                //Destroy(hit.transform.gameObject);
+               
             }
         }
         
@@ -32,7 +36,8 @@ public class GreenBehavior : MonoBehaviour
             if (hit.transform.gameObject.tag == "Red")
             {
                 Debug.Log("cube devant Red");
-                Destroy(hit.transform.gameObject);
+                Instantiate(yellow,hit.transform.position + Vector3.up * 1,hit.transform.rotation);
+                //Destroy(hit.transform.gameObject);
             }
         }
         
@@ -44,7 +49,8 @@ public class GreenBehavior : MonoBehaviour
             if (hit.transform.gameObject.tag == "Red")
             {
                 Debug.Log("cube devant Red");
-                Destroy(hit.transform.gameObject);
+                Instantiate(yellow,hit.transform.position + Vector3.up * 1,hit.transform.rotation);
+                //Destroy(hit.transform.gameObject);
             }
         }
         
@@ -56,7 +62,8 @@ public class GreenBehavior : MonoBehaviour
             if (hit.transform.gameObject.tag == "Red")
             {
                 Debug.Log("cube devant Red");
-                Destroy(hit.transform.gameObject);
+                Instantiate(yellow,hit.transform.position + Vector3.up * 1,hit.transform.rotation);
+                //Destroy(hit.transform.gameObject);
             }
         }
     }
