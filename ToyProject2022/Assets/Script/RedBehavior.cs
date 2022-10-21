@@ -56,7 +56,7 @@ public class RedBehavior : MonoBehaviour
         {
             Debug.Log("cube devant    2");
             
-            if (hit.transform.gameObject.tag == "Greev")
+            if (hit.transform.gameObject.tag == "Green")
             {
                 Debug.Log("cube devant Green");
                 Instantiate(yellow,hit.transform.position + Vector3.up * 1,hit.transform.rotation);
